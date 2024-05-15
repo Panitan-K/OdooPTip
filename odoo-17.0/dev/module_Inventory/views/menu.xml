@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <odoo>
     <menuitem id="menu_inventoryFish_root"
               name="Inventory Fish"
               sequence="10"/>
 
-    <menuitem id="menu_inventoryFish_Slip"
-              name="Inventory Fish"
-              parent = "menu_inventoryFish_root"
+    <menuitem id="menu_inventoryFish_FishOrder"
+              name="Fish Order"
+              parent="menu_inventoryFish_root"
               sequence="10"/>
 </odoo>

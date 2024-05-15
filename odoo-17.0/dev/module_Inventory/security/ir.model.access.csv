@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+module_Inventory.access_module_inventory_fish,access_module_inventory_fish,module_Inventory.model_module_inventory_fish,base.group_user,1,1,1,1
