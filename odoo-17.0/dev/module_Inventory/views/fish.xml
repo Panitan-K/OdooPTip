@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="view_fish_tree" model="ir.ui.view">
+        <field name="name">fish.tree</field>
+        <field name="model">module_inventory.fish</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="order"/>
+                <field name="product_name"/>
+                <field name="description"/>
+                <field name="protein_percent"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_fish_form" model="ir.ui.view">
+        <field name="name">fish.form</field>
+        <field name="model">module_inventory.fish</field>
+        <field name="arch" type="xml">
+            <form>
+                <group>
+                    <field name="order"/>
+                    <field name="product_name"/>
+                    <field name="description"/>
+                    <field name="protein_percent"/>
+                </group>
+            </form>
+        </field>
+    </record>
+</odoo>
