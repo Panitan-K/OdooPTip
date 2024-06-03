@@ -9,3 +9,4 @@ class Fish(models.Model):
     product_name = fields.Char(string='ชื่อสินค้า')
     description = fields.Char(string='คำอธิบายสินค้า')
     protein_percent = fields.Float(string='โปรตีน(%)')
+

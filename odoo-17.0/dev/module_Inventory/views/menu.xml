@@ -4,5 +4,9 @@
               name="Inventory Fish"
               sequence="10"/>
 
-
+    <menuitem id="menu_inventoryFish_Warehouse1"
+              name="Warehouse 1"
+              parent="menu_inventoryFish_root"
+              action="action_fish_tree"
+              sequence="10"/>
 </odoo>

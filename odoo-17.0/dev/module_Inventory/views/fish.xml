@@ -1,14 +1,60 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <odoo>
+<record id="view_inventory_fish_form" model="ir.ui.view">
+    <field name="name">Inventory Fish Form</field>
+    <field name="model">module_inventory.fish</field>
+    <field name="arch" type="xml">
+        <form string="Inventory Fish Form">
+            <group col="1">
+
+
+
+                <label for="order" string="Order No."/>
+                <field name="order" placeholder="ระบุหมายเลขสินค้า"/>
+                <br/>
+                <label for="product_name" string="Product Name"/>
+                <field name="product_name" placeholder="ระบุชื่อสินค้า"/>
+                <br/>
+                <label for="description" string="Description"/>
+                <field name="description" placeholder="ระบุคำอธิบายสินค้า"/>
+                <br/>
+                <label for="protein_percent" string="Protein Percentage"/>
+                <field name="protein_percent" placeholder="ใส่ % โปรตีน"/>
+            </group>
+        </form>
+    </field>
+
+</record>
+
+
+
+    <record id="view_inventory_fish_tree" model="ir.ui.view">
+        <field name="name">Inventory Fish Tree</field>
+        <field name="model">module_inventory.fish</field>
+        <field name="arch" type="xml">
+            <tree string="Inventory Fish Tree">
+                <!-- Define your tree view columns here -->
+                <field name="id"/>
+                <field name="order"/>
+                <field name="product_name"/>
+                <field name="description"/>
+                <field name="protein_percent"/>
+
+            </tree>
+        </field>
+    </record>
+
     <record id="action_fish_tree" model="ir.actions.act_window">
-        <field name="name">Fish Action</field>
+        <field name="name">Fish Inventory View Action</field>
         <field name="type">ir.actions.act_window</field>
         <field name="res_model">module_inventory.fish</field>
         <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="view_inventory_fish_tree"/>
+
+
     </record>
 
     <menuitem id="menu_inventoryFish_FishOrder"
-              name="Fish Order"
+              name="Fish Order Inventory"
               parent="menu_inventoryFish_root"
               action="action_fish_tree"
               sequence="10"/>
